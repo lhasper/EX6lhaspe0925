@@ -1,0 +1,29 @@
+
+<!--
+* Programmer: Lee Hasper
+* Class ID: lhaspe0925
+* Exercise 6
+* CIS 2610: Business Mobile Programming
+* Spring 2016
+* Due date: 03/18/2016
+* Date completed: 03/17/2016
+*************************************
+* Program Explanation
+This application displays 9 images of food in a grid that a user can click to select.
+Once an image is clicked on by the user, a large copy of the image opens up below the grid for a more detailed view of the selection.
+A custom toast message is displayed relaying to the user which item they selected.
+******************************************************************************************
+STRING VARIABLES
+***********************************
+app_name is the name of the application.
+imgImageHolder Displays the images in the gridView
+btnClose has been removed from the app due to not meeting my needs
+-->
+
+<resources>
+    <string name="app_name">EX6lhaspe0925</string>
+    <string name="imgImageHolder">Displays a selected image in a larger subscreen to the user</string>
+    <string name="btnClose">Close</string>
+</resources>
+
+

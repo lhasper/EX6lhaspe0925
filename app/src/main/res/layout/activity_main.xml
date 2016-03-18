@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Programmer: Lee Hasper
+* Class ID: lhaspe0925
+* Exercise 6
+* CIS 2610: Business Mobile Programming
+* Spring 2016
+* Due date: 03/18/2016
+* Date completed: 03/17/2016
+*************************************
+* Program Explanation
+This application displays 9 images of food in a grid that a user can click to select.
+Once an image is clicked on by the user, a large copy of the image opens up below the grid for a more detailed view of the selection.
+A custom toast message is displayed relaying to the user which item they selected.
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context="wmich.edu.ex6lhaspe0925.MainActivity">
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridVImages"
+        android:numColumns="3"
+        android:columnWidth="160dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:choiceMode="singleChoice"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        style="@style/AppTheme" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imgPlaceHolder"
+        android:contentDescription="@string/imgImageHolder"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
